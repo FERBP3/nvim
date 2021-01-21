@@ -59,3 +59,6 @@ let g:lightline = {
 
 
 source $HOME/.config/nvim/plug-config/coc.vim
+
+" global extension
+let g:coc_global_extensions = ['coc-json', 'coc-clangd', 'coc-cmake', 'coc-css', 'coc-html', 'coc-sql', 'coc-tsserver']
