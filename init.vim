@@ -1,12 +1,16 @@
 set list
 set number
 set relativenumber
-set tabstop=3
-set shiftwidth=3
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set clipboard+=unnamedplus
 set noshowmode
 syntax enable
+
+" Mapping ESC
+inoremap jk <Esc>
+inoremap kj <Esc>
 
 " Better tabbing
 vnoremap < <gv
@@ -17,6 +21,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
+Plug 'rakr/vim-one'
 
 " Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -40,10 +45,14 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 "let g:oceanic_next_terminal_italic = 1
 "colorscheme OceanicNext
 
-"gruvbox theme conf
+" gruvbox theme conf
 set background=dark
 let g:gruvbox_contrast_dark = "hard"
 colorscheme gruvbox
+
+" one theme conf
+"colorscheme one
+"set background=dark
 
 " Status line conf
 let g:lightline = {
